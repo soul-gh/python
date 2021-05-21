@@ -31,3 +31,4 @@ for value in range(1,11):
     print(list1[-1])
 list2 =[vc**3 for vc in range(1,11)]
 print("list2:"+str(list2))
+''' test '''
