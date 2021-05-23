@@ -21,3 +21,26 @@ print(max(squares))
 print(sum(squares))
 squares=[value**2 for value in range(1,11)]
 print(squares)
+print("\n")
+
+players=['charles','martina','micheal','florence','eli']
+print(players)
+print(players[:4])
+print(players[1:])
+print(players[-2:])
+for player in players[:3]:
+    print(player)
+my_food=['chiken','steak','pizza']
+friend_food=my_food[:]
+print(my_food)
+print(friend_food)
+my_food.append('potato')
+friend_food.append('ice')
+print(my_food)
+print(friend_food)
+dimensions=(200,50)
+print(dimensions[0])
+print(dimensions[1])
+print(dimensions)
+dimensions=(100,50)
+print(dimensions)
