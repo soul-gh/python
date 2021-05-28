@@ -53,3 +53,67 @@ user_0 = {
 for key, value in user_0.items():
     print("\nKey:" + key)
     print("Value:" + value)
+print("\n")
+
+alien_0 = {'color':'green','points':5}
+alien_1 = {'color':'yellow','points':10}
+alien_2 = {'color':'red','points':15}
+aliens = [alien_0,alien_1,alien_2]
+for alien in aliens:
+    print(alien)
+aliens = []
+for alien_num in range(30):
+    new_alien = {'color':'green','points':5,'speed':'slow'}
+    aliens.append(new_alien)
+for alien in aliens[:5]:
+    print(alien)
+print("Total number of aliens:"+str(len(aliens)))
+for alien_num in range(30):
+    new_alien = {'color':'green','points':5,'speed':'slow'}
+    aliens.append(new_alien)
+aliens[0] = {'color':'yellow','points':10,'speed':'medium'}
+for alien in aliens[0:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['points'] = 10
+        alien['speed'] = 'medium'
+    elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['points'] = 15
+        alien['speed'] = 'fast'
+for alien in aliens[:5]:
+    print(alien)
+
+pizza = {
+    'crust':'thick',
+    'toppings':['mushroom','extra cheese'],
+}
+print("You ordered a "+ pizza['crust']+"-crust pizza with the following toppings:")
+for topping in pizza['toppings']:
+    print(topping)
+favorate_languages = {
+    'jen':['python','ruby'],
+    'sarah':['c'],
+    'edward':['ruby','go'],
+    'phil':['python','haskell'],
+    }
+for name,languages in favorate_languages.items():
+    print(name.title()+" favorate language:")
+    for language in languages:
+        print("\t"+language.title())
+users = {
+    'aeinstein':{
+        'first':'albert',
+        'last':'einstein',
+        'location':'princeton',
+    },
+    'mcurie':{
+        'first':'marie',
+        'last':'curie',
+        'location':'paris',
+    },
+}
+for username, user_info in users.items():
+    print("Username:"+username)
+    print("\tFullname:"+user_info['first']+" "+user_info['last'])
+    print("\tLocation:"+user_info['location']+"\n")
